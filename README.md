@@ -31,7 +31,7 @@ HTML / CSS / JavaScript(jQuery) を使用して構築しました。
 ---
 
 ## 🚀 デモページ
-👉 [GitHub Pagesでのデモはこちら](https://あなたのユーザー名.github.io/brightai/)  
+👉 [GitHub Pagesでのデモはこちら](https://kota0129.github.io/mini-demo-ai_corporate/)  
 （※URLは GitHub Pages 有効化後に変更してください）
 
 ---
