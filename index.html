@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BrightAI Inc. | AIで業務効率を2倍にする未来を創る</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BrightAI Inc. はAIチャット・データ分析・API連携をワンストップで提供するSaaS企業です。最短2週間で導入、セキュリティ設計・稟議資料の提供にも対応。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BrightAI Inc." />
+    <meta
+      property="og:description"
+      content="AIで業務効率を2倍にする未来を創る。AIチャット/分析/連携を一体提供。"
+    />
+    <meta property="og:image" content="img/ogp.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+    <link rel="icon" href="img/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BrightAI Inc.",
+        "url": "https://example.com/",
+        "logo": "https://example.com/img/logo.png",
+        "sameAs": [],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "info@example.com",
+            "telephone": "+81-3-1234-5678",
+            "areaServed": "JP",
+            "availableLanguage": ["Japanese", "English"]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Skip link -->
+    <a
+      href="#main"
+      class="skip"
+      style="
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      "
+      >本文へ移動</a
+    >
+
+    <!-- Header -->
+    <header class="header" role="banner">
+      <h1 class="site-title">
+        <a href="#" class="logo" aria-label="BrightAI Home">BrightAI</a>
+      </h1>
+
+      <button
+        class="hamburger"
+        aria-controls="global-nav"
+        aria-expanded="false"
+        aria-label="メニューを開閉"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Global navigation -->
+      <nav id="global-nav" class="gnav" aria-label="グローバルナビゲーション">
+        <ul class="nav-list">
+          <li><a href="#reasons">選ばれる理由</a></li>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#results">導入事例</a></li>
+          <li><a href="#company">会社情報</a></li>
+          <li><a href="#careers">採用情報</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact" class="cta">資料請求・ご相談</a></li>
+        </ul>
+      </nav>
+
+      <div class="mask" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <div class="hero__inner">
+          <!-- Left: copy -->
+          <div>
+            <h1 id="hero-title" class="hero-title">
+              AIで業務効率を<span>2倍</span>にする未来を創る
+            </h1>
+
+            <p class="catch">
+              BrightAIは、日々のオペレーションに寄り添うAIチャットとデータ分析のSaaSです。
+            </p>
+            <div class="features-wrap">
+              <ul class="features" aria-label="主要特長">
+                <li>
+                  <span class="features__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path d="M7 2v11h3v9l7-12h-4l4-8z" />
+                    </svg>
+                  </span>
+                  <span>最短 <strong>2週間</strong> で導入</span>
+                </li>
+                <li>
+                  <span class="features__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M14.7 6.3l3 3-9.9 9.9-3-3L14.7 6.3zM22 7.3L16.7 2 14 4.7l5.3 5.3L22 7.3zM2 20h20v2H2z"
+                      />
+                    </svg>
+                  </span>
+                  <span><strong>ノーコード</strong> で運用</span>
+                </li>
+                <li>
+                  <span class="features__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M10.59 13.41a1.9959 1.9959 0 0 0 2.82 0l1.18-1.18 1.41 1.41-1.18 1.18a3.984 3.984 0 0 1-5.64 0 3.984 3.984 0 0 1 0-5.64l1.18-1.18 1.41 1.41-1.18 1.18a1.9959 1.9959 0 0 0 0 2.82zM17.65 6.35a3.984 3.984 0 0 1 0 5.64l-1.18 1.18-1.41-1.41 1.18-1.18a1.9959 1.9959 0 0 0 0-2.82 1.9959 1.9959 0 0 0-2.82 0l-1.18 1.18-1.41-1.41 1.18-1.18a3.984 3.984 0 0 1 5.64 0z"
+                      />
+                    </svg>
+                  </span>
+                  <span>API連携で <strong>既存システム活用</strong></span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="trustbar" aria-label="信頼性の訴求">
+              <div class="trustbar__chip">🔒 企業向けセキュリティ設計</div>
+              <div class="trustbar__chip">⏱ 99.9% SLA（参考値）</div>
+              <div class="trustbar__chip">🤝 導入〜運用サポート</div>
+            </div>
+
+            <p class="subtext">
+              制作会社・ディレクター様の検証や見積段階のご相談も歓迎です。
+            </p>
+
+            <a href="#contact" class="btn">（無料）サービス資料を受け取る</a>
+          </div>
+
+          <!-- Right: mock visual (装飾) -->
+          <div class="hero__mock" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <div class="container">
+        <!-- Problem -->
+        <section id="problem" class="problem fadein">
+          <h2>業務自動化、こんなお悩みありませんか？</h2>
+          <div class="problems">
+            <div class="problem-box">
+              <span>1</span>
+              <p>現場の問い合わせ対応に時間がとられている</p>
+            </div>
+            <div class="problem-box">
+              <span>2</span>
+              <p>ダッシュボードがバラバラで意思決定が遅い</p>
+            </div>
+            <div class="problem-box">
+              <span>3</span>
+              <p>既存システムとAIをどう繋ぐか分からない</p>
+            </div>
+          </div>
+          <div class="arrow" aria-hidden="true"></div>
+          <p class="solution">
+            BrightAIなら、チャット×分析×API連携をワンストップで解決します。
+          </p>
+          <a href="#contact" class="btn btn-large">
+            <span class="btn-text">今すぐ！ご相談したい方はこちら</span>
+            <span class="btn-circle"
+              ><span class="num-large">2</span>分で<br />完了</span
+            >
+          </a>
+        </section>
+
+        <!-- Reasons -->
+        <section id="reasons" class="reasons fadein">
+          <h2>選ばれる <span class="num">5</span> つの理由</h2>
+          <p class="reasons-lead">
+            制作会社・ディレクターが評価する、導入しやすさと拡張性。
+          </p>
+
+          <div class="reasons-list">
+            <!-- 1 -->
+            <div class="reason-box">
+              <div class="reason-thumb" aria-hidden="true">最短導入</div>
+              <div class="reason-content">
+                <div class="reason-head">
+                  <span class="reason-num">1</span>
+                  <h3>
+                    スピード導入
+                    <small>要件定義から運用開始まで最短2週間</small>
+                  </h3>
+                </div>
+                <p class="reason-desc">
+                  テンプレート化されたフローとノーコード設定で、PoCから本番まで滑らかに移行できます。
+                </p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="reason-box">
+              <div class="reason-thumb" aria-hidden="true">多機能</div>
+              <div class="reason-content">
+                <div class="reason-head">
+                  <span class="reason-num">2</span>
+                  <h3>
+                    多彩なプロダクト
+                    <small>AIチャット／分析／APIを一体提供</small>
+                  </h3>
+                </div>
+                <p class="reason-desc">
+                  分断されがちなツール群を統合。要件追加にも柔軟に対応します。
+                </p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="reason-box">
+              <div class="reason-thumb" aria-hidden="true">根拠</div>
+              <div class="reason-content">
+                <div class="reason-head">
+                  <span class="reason-num">3</span>
+                  <h3>
+                    根拠ある提案 <small>KPI設計と効果測定をセットで</small>
+                  </h3>
+                </div>
+                <p class="reason-desc">
+                  稟議にそのまま使える要件定義・効果試算シートを提供します。
+                </p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="reason-box">
+              <div class="reason-thumb" aria-hidden="true">連携</div>
+              <div class="reason-content">
+                <div class="reason-head">
+                  <span class="reason-num">4</span>
+                  <h3>API連携 <small>既存SaaSや業務システムと接続</small></h3>
+                </div>
+                <p class="reason-desc">
+                  認証やデータ更新の設計もサポート。段階的な拡張が可能です。
+                </p>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="reason-box">
+              <div class="reason-thumb" aria-hidden="true">価格</div>
+              <div class="reason-content">
+                <div class="reason-head">
+                  <span class="reason-num">5</span>
+                  <h3>
+                    納得の価格 <small>スモールスタートに最適な料金体系</small>
+                  </h3>
+                </div>
+                <p class="reason-desc">
+                  小規模PoCから全社展開まで、段階的に無理なく進められます。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-large">
+            <span class="btn-text"
+              >【無料】サービスの詳細・料金のお問い合わせ</span
+            >
+          </a>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="services fadein">
+          <h2 class="section-title">サービス</h2>
+          <div class="cards">
+            <article class="card">
+              <div
+                class="card__thumb card__thumb--chat"
+                aria-hidden="true"
+              ></div>
+              <h3 class="card__title">AIチャットツール</h3>
+              <p class="card__desc">
+                社内問い合わせや顧客対応の一次応答を自動化。<br />
+                よくある質問やマニュアルをナレッジ化し、AIが即座に回答します。<br />
+                管理画面から回答内容を簡単に更新できるため、情報を常に最新の状態に保てます。<br />
+                導入後は、対応コスト削減と応答スピード向上の両立を実現します。
+              </p>
+            </article>
+            <article class="card">
+              <div
+                class="card__thumb card__thumb--analytics"
+                aria-hidden="true"
+              ></div>
+              <h3 class="card__title">データ分析プラットフォーム</h3>
+              <p class="card__desc">
+                複数のデータソースを統合し、KPIを一元管理できるダッシュボードを提供。<br />
+                BIツールとの連携やリアルタイム分析により、意思決定のスピードを大幅に向上させます。<br />
+                イベントトラッキング機能を活用すれば、ユーザー行動や業務フローを可視化し、改善に直結するインサイトを獲得可能です。
+              </p>
+            </article>
+            <article class="card">
+              <div
+                class="card__thumb card__thumb--api"
+                aria-hidden="true"
+              ></div>
+              <h3 class="card__title">API連携サービス</h3>
+              <p class="card__desc">
+                CRM・MA・基幹システムなど、既存の業務ツールと安全に連携。<br />
+                Webフックや定期バッチ処理を用いたデータ同期により、手作業の負担を軽減します。<br />
+                また、認証や権限設計にも対応しているため、セキュリティを確保しながら効率的なシステム連携を実現します。<br />
+                段階的な拡張にも対応し、将来的なスケールアップも見据えた設計が可能です。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Compare -->
+        <section id="compare" class="compare fadein">
+          <h2 class="compare__title">AIツール、どこに頼むのが正解？</h2>
+          <p class="compare__lead">
+            自社の状況に合わせて、最適な依頼先を選びましょう。
+          </p>
+          <div class="cmp-table-wrap">
+            <table class="cmp-table" aria-label="外注先比較表">
+              <thead>
+                <tr>
+                  <th class="cmp-th--item">項目</th>
+                  <th class="cmp-top--highlight">BrightAI</th>
+                  <th>制作会社</th>
+                  <th>クラウドソーシング</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>概要</th>
+                  <td class="cmp-row--highlight">AI/SaaS提供企業</td>
+                  <td>受託開発・制作</td>
+                  <td>個人請負</td>
+                </tr>
+                <tr>
+                  <th>提案作成者</th>
+                  <td class="cmp-row--highlight">
+                    <strong>プロダクト/データチーム</strong>
+                  </td>
+                  <td>PM/エンジニア</td>
+                  <td>個人</td>
+                </tr>
+                <tr>
+                  <th>スピード</th>
+                  <td class="cmp-row--highlight">
+                    <span class="mark is-double-maru" aria-hidden="true"></span>
+                    <p class="bold-text">最短2週間</p>
+                  </td>
+                  <td>
+                    <span class="mark is-sankaku" aria-hidden="true"></span>
+                  </td>
+                  <td><span class="mark is-maru" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                  <th>提案数</th>
+                  <td class="cmp-row--highlight">
+                    <p class="bold-text">適正<br />（要件に基づく）</p>
+                  </td>
+                  <td>作業者により変動</td>
+                  <td>数優先</td>
+                </tr>
+                <tr>
+                  <th>セキュリティ</th>
+                  <td class="cmp-row--highlight">
+                    <span class="mark is-double-maru" aria-hidden="true"></span>
+                  </td>
+                  <td><span class="mark is-maru" aria-hidden="true"></span></td>
+                  <td>
+                    <span class="mark is-sankaku" aria-hidden="true"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>提案根拠</th>
+                  <td class="cmp-row--highlight">
+                    <span class="mark is-double-maru" aria-hidden="true"></span>
+                  </td>
+                  <td><span class="mark is-maru" aria-hidden="true"></span></td>
+                  <td>
+                    <span class="mark is-batsu" aria-hidden="true"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>費用</th>
+                  <td class="cmp-bottom--highlight">
+                    <div class="badge">適正価格</div>
+                  </td>
+                  <td>高価な場合も</td>
+                  <td>安価</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="cmp-arrow" aria-hidden="true"></div>
+
+          <div class="cmp-reco">
+            <div class="cmp-reco__illust" aria-hidden="true">
+              <img src="img/meeting1.jpg" alt="ミーティング中" />
+            </div>
+            <div class="cmp-reco__body">
+              <h3 class="cmp-reco__title">こんな企業にオススメ！</h3>
+              <ul class="cmp-reco__list">
+                <li>まずはスモールスタートで効果を検証したい</li>
+                <li>既存SaaSと連携しながら段階的に拡張したい</li>
+                <li>稟議用の要件定義/効果試算が必要</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Results -->
+        <section id="results" class="results fadein">
+          <h2 class="results__title">導入事例</h2>
+          <div class="results__summary">
+            <p class="results__summary-main">
+              さまざまな業界の企業様にご利用いただいています
+            </p>
+            <p class="results__summary-sub">
+              例：問い合わせ一次応答の自動化／レポート作成の時短／ダッシュボード整備
+              など
+            </p>
+          </div>
+
+          <div class="results__logos">
+            <div class="logo-card">大手小売</div>
+            <div class="logo-card">ITソリューション</div>
+            <div class="logo-card">広告代理店</div>
+            <div class="logo-card">製造メーカー</div>
+            <div class="logo-card">教育関連</div>
+            <div class="logo-card">医療機器</div>
+          </div>
+
+          <div class="kpi-cards">
+            <div class="kpi-card">
+              <div class="kpi-num">-40%</div>
+              <div class="kpi-label">問い合わせ対応時間</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-num">+2x</div>
+              <div class="kpi-label">レポート作成速度</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-num">95%</div>
+              <div class="kpi-label">FAQ自動解決率（例）</div>
+            </div>
+          </div>
+
+          <div class="results__cta">
+            <a href="#contact" class="btn btn-large is-invert">
+              <span class="btn-text">事例をもっと見る（資料）</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Global -->
+        <section id="global" class="global fadein">
+          <div class="global__bg"></div>
+          <div class="global__content">
+            <h2 class="global__title">海外展開・多言語にも対応</h2>
+            <p class="global__lead">
+              英語UIと多言語のナレッジ運用をサポートします。
+            </p>
+            <p class="global__desc">
+              海外チームとの共同運用や、現地SaaSとの連携にも対応。将来的な拠点拡大も見据えた設計が可能です。
+            </p>
+          </div>
+        </section>
+
+        <!-- Flow -->
+        <section id="flow" class="flow fadein" aria-labelledby="flow-title">
+          <h2 id="flow-title" class="flow__heading">導入の流れ</h2>
+          <div class="flow__track">
+            <ol class="flow__steps">
+              <li class="flow__step">
+                <div class="flow__card" aria-hidden="true"><span>1</span></div>
+                <p class="flow__title">お問い合わせ</p>
+                <p class="flow__note">要件・背景をヒアリング</p>
+              </li>
+              <li class="flow__step">
+                <div class="flow__card" aria-hidden="true"><span>2</span></div>
+                <p class="flow__title">ご提案</p>
+                <p class="flow__note">スコープ/スケジュール共有</p>
+              </li>
+              <li class="flow__step">
+                <div class="flow__card" aria-hidden="true"><span>3</span></div>
+                <p class="flow__title">PoC/構築</p>
+                <p class="flow__note">接続設定・検証運用</p>
+              </li>
+              <li class="flow__step">
+                <div class="flow__card" aria-hidden="true"><span>4</span></div>
+                <p class="flow__title">本番運用</p>
+                <p class="flow__note">定着化支援・改善</p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- Company -->
+        <section id="company" class="company fadein">
+          <h2 class="section-title">会社情報</h2>
+          <div class="company__grid">
+            <div class="company__block">
+              <h3>ミッション</h3>
+              <p>「人とAIが共創する“考える時間”を増やす」</p>
+              <h3>ビジョン</h3>
+              <p>あらゆる現場の意思決定をデータドリブンに。</p>
+            </div>
+            <div class="company__block">
+              <h3>会社概要</h3>
+              <dl class="company__dl">
+                <dt>社名</dt>
+                <dd>BrightAI Inc.</dd>
+                <dt>所在地</dt>
+                <dd>Tokyo, Japan</dd>
+                <dt>設立</dt>
+                <dd>2025年</dd>
+                <dt>事業内容</dt>
+                <dd>AI/SaaSの開発・提供</dd>
+              </dl>
+            </div>
+            <div class="company__block">
+              <h3>沿革</h3>
+              <ul class="timeline">
+                <li><span>2025</span> BrightAI 設立</li>
+                <li><span>2025</span> コア製品β版を公開</li>
+                <li><span>2026</span> 連携API機能を拡充（予定）</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Careers -->
+        <section id="careers" class="careers fadein">
+          <h2 class="section-title">採用情報</h2>
+          <p class="careers__lead">
+            「小さく速くつくり、最短で価値を届ける」カルチャーです。
+          </p>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card__thumb is-photo" aria-hidden="true">
+                <img src="img/programmer.jpg" alt="ソフトウェアエンジニア" />
+              </div>
+              <h3 class="card__title">ソフトウェアエンジニア</h3>
+              <p class="card__desc">
+                TypeScript/Go/LLM活用。プロダクト共創できる方を歓迎。<br />
+                新しい技術を積極的に取り入れ、スピード感のある開発を行います。
+                モダンな開発環境で、設計から実装・運用まで幅広く携わりたい方に最適です。
+                チームでのコードレビューや知識共有を大切にしながら、ユーザーに価値を届ける体験を一緒に作り上げていきます。
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card__thumb is-photo" aria-hidden="true">
+                <img src="img/dataanalytics.jpg" alt="データアナリスト" />
+              </div>
+              <h3 class="card__title">データアナリスト</h3>
+              <p class="card__desc">
+                計測設計・ダッシュボード・改善提案の実務経験を優遇。<br />
+                データドリブンな意思決定を支えるポジションです。
+                施策の効果測定や仮説検証を行い、事業成長のための具体的なアクションを導きます。
+                SQLやBIツールに加え、機械学習モデルの活用経験がある方はさらに活躍いただけます。
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card__thumb is-photo" aria-hidden="true">
+                <img src="img/planning.jpg" alt="デザイン/PM" />
+              </div>
+              <h3 class="card__title">デザイン/PM</h3>
+              <p class="card__desc">
+                情報設計・UI/UX・要件定義に強い方を募集。<br />
+                ユーザー体験を起点に、サービス全体の体験設計をリードしていただきます。
+                デザイン思考を活かしながら、エンジニアやビジネスメンバーと協働してプロジェクトを推進。
+                プロダクトマネジメント経験やアジャイル開発での進行管理スキルがある方は歓迎します。
+              </p>
+            </article>
+          </div>
+
+          <div class="results__cta">
+            <a href="#contact" class="btn btn-large">
+              <span class="btn-text">採用について問い合わせる</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Inquiry / Contact -->
+        <section
+          id="inquiry"
+          class="inquiry fadein"
+          aria-labelledby="inquiry-title"
+        >
+          <h2 id="inquiry-title" class="inquiry__heading">
+            AIで、ビジネスの推進力を高める。<br />
+            まずは資料請求・ご相談から。
+          </h2>
+          <p class="inquiry__lead">資料請求・ご相談フォーム（無料）</p>
+          <p class="inquiry__note">
+            「まずは話を聞いてみたい」「課題の整理からお願いしたい」といった段階でも大歓迎です。<br />
+            1営業日以内に担当よりご連絡差し上げます。以下の項目をご入力ください。
+          </p>
+
+          <figure class="inquiry__brochure" aria-hidden="true">
+            <div class="inquiry__brochure-thumb">
+              <img src="img/document.jpg" alt="資料イメージ" />
+            </div>
+            <figcaption class="inquiry__brochure-caption">
+              プロダクトと事例をまとめた<br class="pc-only" />資料をプレゼント！
+            </figcaption>
+          </figure>
+
+          <div class="inquiry__lists">
+            <div class="inquiry__list">
+              <h3 class="inquiry__sub">BrightAIを選ぶ6つのメリット</h3>
+              <ol>
+                <li>短期導入・段階導入が可能</li>
+                <li>ノーコードで運用が簡単</li>
+                <li>ダッシュボードでKPI可視化</li>
+                <li>安心のAPI/連携設計</li>
+                <li>稟議用のドキュメント提供</li>
+                <li>導入後の定着化支援</li>
+              </ol>
+            </div>
+            <div class="inquiry__list">
+              <h3 class="inquiry__sub">導入スケジュール例</h3>
+              <ol>
+                <li>要件ヒアリング（1〜2h）</li>
+                <li>提案/見積（3〜5営業日）</li>
+                <li>PoC構築（1〜2週間）</li>
+                <li>本番切替（翌週〜）</li>
+                <li>定着化/運用（継続）</li>
+                <li>拡張・改善（必要に応じて）</li>
+              </ol>
+            </div>
+          </div>
+
+          <form
+            id="contact"
+            class="inquiry__form"
+            action="#"
+            method="post"
+            novalidate
+          >
+            <div class="inquiry__field">
+              <label for="company">会社名</label>
+              <input
+                id="company"
+                type="text"
+                name="company"
+                placeholder="例）株式会社〇〇"
+                required
+              />
+            </div>
+            <div class="inquiry__field">
+              <label for="person">ご担当者名</label>
+              <input
+                id="person"
+                type="text"
+                name="person"
+                placeholder="例）山田 太郎"
+                required
+              />
+            </div>
+            <div class="inquiry__field">
+              <label>お電話番号</label>
+              <div class="inquiry__tel">
+                <input
+                  type="tel"
+                  name="tel1"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  aria-label="電話番号1"
+                />
+                <span class="inquiry__dash" aria-hidden="true">-</span>
+                <input
+                  type="tel"
+                  name="tel2"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  aria-label="電話番号2"
+                />
+                <span class="inquiry__dash" aria-hidden="true">-</span>
+                <input
+                  type="tel"
+                  name="tel3"
+                  inputmode="numeric"
+                  pattern="[0-9]*"
+                  aria-label="電話番号3"
+                />
+              </div>
+            </div>
+            <div class="inquiry__field">
+              <label for="email">メールアドレス</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="例）example@example.com"
+                required
+              />
+            </div>
+            <div class="inquiry__field inquiry__field--short">
+              <label for="due">希望時期</label>
+              <input
+                id="due"
+                type="text"
+                name="due"
+                placeholder="例）○月下旬 目安"
+              />
+            </div>
+            <div class="inquiry__field inquiry__field--full">
+              <label for="message">ご質問・ご要望</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="ご相談内容をご自由にお書きください。"
+              ></textarea>
+            </div>
+            <label class="inquiry__agree">
+              <input type="checkbox" name="agree" required />
+              プライバシーポリシーに同意の上、送信する
+            </label>
+            <button class="inquiry__submit" type="submit">
+              上記の内容で申し込む
+            </button>
+          </form>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq fadein" aria-labelledby="faq-title">
+          <h2 id="faq-title" class="faq__heading">よくあるご質問</h2>
+          <div class="ac-menu">
+            <div class="faq__item">
+              <button class="faq__question label" aria-expanded="false">
+                <span class="faq__label">Q.</span>
+                導入までどれくらいかかりますか？
+                <span class="faq__toggle" aria-hidden="true"></span>
+              </button>
+              <div class="faq__answer" hidden>
+                <p>
+                  <span class="faq__label faq__label--a">A.</span>
+                  スコープにもよりますが、PoCなら最短2週間、本番運用はその翌週を目安としています。
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question label" aria-expanded="false">
+                <span class="faq__label">Q.</span>
+                既存システムとの連携は可能ですか？
+                <span class="faq__toggle" aria-hidden="true"></span>
+              </button>
+              <div class="faq__answer" hidden>
+                <p>
+                  <span class="faq__label faq__label--a">A.</span>
+                  はい、APIやWebフックでCRM/MA/BIなどと接続可能です。要件定義からサポートします。
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question label" aria-expanded="false">
+                <span class="faq__label">Q.</span>
+                セキュリティ面の対応は？
+                <span class="faq__toggle" aria-hidden="true"></span>
+              </button>
+              <div class="faq__answer" hidden>
+                <p>
+                  <span class="faq__label faq__label--a">A.</span>
+                  認証・権限設計、データ保持方針、監査ログなどを設計の初期段階から考慮します。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- /.container -->
+    </main>
+
+    <footer class="footer">
+      <h2 class="footer__logo">
+        <a href="#" class="logo">BrightAI</a>
+      </h2>
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <ul class="nav-list">
+          <li><a href="#reasons">選ばれる理由</a></li>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#results">導入事例</a></li>
+          <li><a href="#company">会社情報</a></li>
+          <li><a href="#careers">採用情報</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact" class="cta">資料請求・ご相談</a></li>
+        </ul>
+      </nav>
+      <div class="footer__legal">
+        <ul class="legal-nav" aria-label="法務メニュー">
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">情報セキュリティ基本方針</a></li>
+          <li><a href="#">特定商取引法に基づく表記</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="footer__copy">
+        <small>&copy; 2025 BrightAI Inc. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </body>
+</html>
